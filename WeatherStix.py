@@ -1,5 +1,5 @@
 # 12JUN2020 : Written: JMK : Create focal point of this project;
-#   define a data record and elementary functions in a class object
+#   define a data record and elementary data functions in a class object
 
 
 class WeatherStix:
@@ -7,19 +7,20 @@ class WeatherStix:
 
     def __init__(self, datetime, precip, temp, humidity, windspeed, avgwindspeed2m,
                  winddirection, avgwinddirection2m, windgust, windgustdir, windgust10m,
-                 windgustdir10m, battery, barometer, lightlevel):
-        self.datetime = 0
-        self.precip = 0.0
-        self.temp = 0.0
-        self.humidity = 0.0
-        self.windspeed = 0.0
-        self.avgwindspeed2m = 0.0
-        self.winddirection = ""
-        self.avgwinddirection2m = ""
-        self.windgust = 0.0
-        self.windgustdir = ""
-        self.windgust10m = 0.0
-        self.windgustdir10m = ""
-        self.battery = 0.0
-        self.barometer = 0.0
-        self.lightlevel = 0.0
+                 windgustdir10m, battery, barometer, lightlevel, altitude):
+        self.datetime = datetime
+        self.precip = precip
+        self.temp = temp
+        self.humidity = humidity
+        self.windspeed = windspeed
+        self.avgwindspeed2m = avgwindspeed2m
+        self.winddirection = winddirection
+        self.avgwinddirection2m = avgwinddirection2m
+        self.windgust = windgust
+        self.windgustdir = windgustdir
+        self.windgust10m = windgust10m
+        self.windgustdir10m = windgustdir10m
+        self.battery = battery
+        self.barometer = barometer
+        self.lightlevel = lightlevel
+        self.altitude = altitude
